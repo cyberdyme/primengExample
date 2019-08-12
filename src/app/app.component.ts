@@ -7,27 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primengExample';
-
-  Indiastate = [
-    'Rajasthan',
-    'UP',
-    'Mp',
-    'Delhi',
-    'Goa',
-    'Gurjat',
-    'Punjab'
-  ];
-  Ausstate = [
-
-    'New South Wales',
-    'Queensland',
-    'South Australia',
-    'Tasmania'
-  ];
-  Slstate = [
-    'Kandy',
-    'Galle',
-    'Kegalle',
-    'Mannar'
-  ];
 }

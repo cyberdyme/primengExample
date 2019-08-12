@@ -9,11 +9,17 @@ import {ButtonModule} from 'primeng/button';
 import { AccordionModule, OrderListModule } from 'primeng/primeng';
 import { PanelModule } from 'primeng/primeng';
 import { RadioButtonModule } from 'primeng/primeng';
+import { InvitesHeaderComponent } from './invites-header/invites-header.component';
+import { InvitesGridComponent } from './invites-grid/invites-grid.component';
+import { InvitesContainerComponent } from './invites-container/invites-container.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InvitesHeaderComponent,
+    InvitesGridComponent,
+    InvitesContainerComponent
   ],
   imports: [
     BrowserModule,
