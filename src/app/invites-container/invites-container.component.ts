@@ -12,4 +12,7 @@ export class InvitesContainerComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSelectionChanged(selection: string) {
+    console.warn('Key pressed', selection);
+  }
 }

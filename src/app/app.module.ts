@@ -12,7 +12,9 @@ import { RadioButtonModule } from 'primeng/primeng';
 import { InvitesHeaderComponent } from './invites-header/invites-header.component';
 import { InvitesGridComponent } from './invites-grid/invites-grid.component';
 import { InvitesContainerComponent } from './invites-container/invites-container.component';
-
+import {TableModule} from 'primeng/table';
+import { HttpClientModule } from '@angular/common/http';
+import { CarService } from './car.service';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,11 @@ import { InvitesContainerComponent } from './invites-container/invites-container
     ButtonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    OrderListModule
+    OrderListModule,
+    TableModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
