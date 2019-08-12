@@ -1,5 +1,5 @@
 <app-invites-header (selectionChanged)="onSelectionChanged($event)">
 </app-invites-header>
 
-<app-invites-grid>
+<app-invites-grid [value]="car$ | async">
 </app-invites-grid>

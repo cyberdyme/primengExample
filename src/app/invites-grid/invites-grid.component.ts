@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 export interface Car {
   vin?;
@@ -15,8 +15,8 @@ export interface Car {
   styleUrls: ['./invites-grid.component.css']
 })
 export class InvitesGridComponent implements OnInit {
-  cars: Car[];
   cols: any[];
+  @Input() value: Car[];
 
   constructor() { }
 
