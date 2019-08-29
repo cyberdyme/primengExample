@@ -49,4 +49,20 @@ docker run -d -v ${PWD}:/app -v /app/node_modules -p 4201:4200 --name foo --rm p
 docker exec -it foo ng test --watch=false
 docker exec -it foo ng e2e --port 4202
 
-
+# Debug script
+Add to launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+     {
+       "type": "chrome",
+       "request": "launch",
+       "name": "Launch Chrome against localhost",
+       "url": "http://localhost:4201",
+       "webRoot": "${workspaceFolder}",
+       "sourceMapPathOverrides": {
+         "webpack:/*": "${webRoot}/*"
+       }
+     }
+   ]
+ }
